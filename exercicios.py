@@ -1,9 +1,9 @@
 # #### Inteiros (`int`)
 
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
+
 # num1 = int(input("Digite um número: "))
 # num2 = int(input("Digite outro número: "))
-
 # print(num1 + num2)
 
 
@@ -17,7 +17,6 @@
 
 # num1 = int(input("Digite um número: "))
 # num2 = int(input("Digite outro número: "))
-
 # print(num1 * num2)
 
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
@@ -38,6 +37,7 @@
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 
 # import math
@@ -70,8 +70,8 @@
 
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
 
-# string1 = input("Digite algo: "))
-# string2 = input("Digite outra coisa: "))
+# string1 = input("Digite algo: ")
+# string2 = input("Digite outra coisa: ")
 # print(string1 + string2)
 
 # #### Booleanos (`bool`)
@@ -85,7 +85,47 @@
 # #### try-except e if
 
 # 21: Conversor de Temperatura
+
 # 22: Verificador de Palíndromo
+
+# texto = input("Digite algo: ")
+# texto_invertido = texto[::-1]
+
+# if texto == texto_invertido:
+#     print("É um palíndromo")
+# else:
+#     print("Não é um palíndromo")
+
 # 23: Calculadora Simples
+
+num1 = input("Digite um número: ")
+num2 = input("Digite outro número: ")
+operacao = input("Digite uma operação matemática entre '+', '-', 'x' ou '/' : ")
+
+try:
+    num1 = float(num1)
+    num2 = float(num2)
+
+except TypeError as e:
+    print(e)
+
+try:
+    if operacao == "+":
+        print(num1 + num2)
+
+    if operacao == "-":
+        print(num1 - num2)
+
+    if operacao == "x":
+        print(num1 * num2)
+
+    if operacao == "/":
+        print(num1 / num2)
+
+except:
+    print("Digite uma operação válida. Escolha entre '+', '-', 'x' ou '/' ")
+
+
 # 24: Classificador de Números
+
 # 25: Conversão de Tipo com Validação
