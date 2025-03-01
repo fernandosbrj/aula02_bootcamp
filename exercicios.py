@@ -165,6 +165,21 @@
 # e utilize if-elif-else para classificar o número como "positivo", "negativo" ou "zero". 
 # Adicionalmente, identifique se o número é "par" ou "ímpar".
 
+# try:
+#     num = float(input("Digite um número: "))
+#     if num > 0:
+#         print("Positivo")
+#     elif num < 0:
+#         print("Negativo")
+#     else:
+#         print("Igual a zero")
+
+# except ValueError as e:
+#     print(e)
+#     print("Digite um número válido")
+
+
+
 # 25: Conversão de Tipo com Validação
 
 # Crie um script que solicite ao usuário uma lista de números separados por vírgula. 
@@ -172,3 +187,18 @@
 # Utilize try-except para tratar a conversão de cada número e validar que 
 # cada elemento da lista convertida é um inteiro. Se a conversão falhar ou um elemento não for um inteiro, 
 # imprima uma mensagem de erro. Se a conversão for bem-sucedida para todos os elementos, imprima a lista de inteiros.
+
+# lista = input("Insira uma lista de números separados por vírgula: ")
+# lista_separada = lista.split(",")
+# lista_nova = []
+
+# try:
+#     for item in lista_separada:
+#         num = int(item.strip())
+#         lista_nova.append(num)
+
+#     print("Lista de inteiros", lista_nova)
+
+# except ValueError as e:
+#     print(e)
+#     print("Lista inválida")
